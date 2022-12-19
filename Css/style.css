@@ -101,7 +101,6 @@ header{
 .Projetos{
     text-decoration: none;
     color: white;
-    border-radius: 10px;
     font-size: 3vw;
     transition: 0.25s;
 }
@@ -112,7 +111,6 @@ header{
 .ic{
     width: 10vw;
     margin-left: 0.5vw;
-    border-radius: 10px;
 }
 
 .opc2{
@@ -135,29 +133,34 @@ label span{
     width: 30px;
     border-radius: 10px;
     background-color: white;
-    transition: 0.25s ease-in-out;
+    transition: 0.5s;
 }
 
 label span:nth-child(1){
     top: 3.4vh; /* tirei 0.1vh pq estava ruim a visualização  */
+    background:linear-gradient(white,rgb(177, 177, 177));
 }
 label span:nth-child(2){
     top: 5vh;
+    background:linear-gradient(white,rgb(177, 177, 177));
 }
 label span:nth-child(3){
     top: 6.6vh;
+    background:linear-gradient(white,rgb(177, 177, 177));
 }
 
 #checkbox-menu:checked + label span:nth-child(1){
     rotate: 45deg;
-    top: 5vh
+    top: 5vh;
 }
 #checkbox-menu:checked + label span:nth-child(2){
     rotate: 45deg;
+    background:linear-gradient(white,gray);
 }
 #checkbox-menu:checked + label span:nth-child(3){
     rotate: 135deg;
-    top: 5vh
+    top: 5vh;
+    background:linear-gradient(gray,white);
 }
 
 
@@ -176,9 +179,18 @@ label span:nth-child(3){
         height: 80%;
     }
     .card{
+        flex-direction: column;
         margin-top: 10vh;
         height: 30%;
         width: 50vw;
+        text-align: center;
+    }
+    .Projetos{
+        font-size: 1.5em;
+    }
+    .ic{
+        width: 50%;
+        margin-bottom: 5vh;
     }
     #titulo{
         font-size: 2em;
