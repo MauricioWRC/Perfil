@@ -76,7 +76,7 @@ header{
     display: flex;
     width: 25vw;
     height: 35vh;
-    background:linear-gradient(rgb(49, 0, 127), rgb(20, 0, 53));
+    backdrop-filter: blur(20px);
     border-radius: 20px;
     color: white;
     justify-content: center;
@@ -87,9 +87,7 @@ header{
 }
 
 .card:hover{
-    background:linear-gradient(rgb(37, 0, 75), rgb(0, 0, 44));
     box-shadow: 0px 0px 80px 30px rgba(255, 255, 255, 0.5);
-    transition: 0.5s;
 }
 
 .txt{

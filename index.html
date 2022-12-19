@@ -29,14 +29,14 @@
         <div class="corpo">
             <h1 id="titulo">Projetos</h1>
             <div class="all-cards">
-                <div class="card">
+                <form class="card" >
                     <div class="txt">
-                        <a class="Projetos" href="#">Projetos</a>
+                        <p class="Projetos">Projetos</p>
                     </div>
                     <div class="icon">
-                        <a href="#"><img class="ic" src="./img/html-5.png" alt=""></a>
+                        <img class="ic" src="./img/html-5.png" alt="">
                     </div>
-                </div>
+                </form>
                 <div class="card">
                     <div class="txt">
                         <a class="Projetos" href="#">Projetos</a>
@@ -64,5 +64,11 @@
         </footer>
     </div>
     <script src="./script/script.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll(".card"),{
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+    });</script>
 </body>
 </html>
