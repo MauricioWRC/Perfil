@@ -7,51 +7,57 @@
     <link rel="stylesheet" href="./Css/style.css">
     <title>Portfólio</title>
 </head>
+
 <body>
     <div class="container">
         <header>
             <a class="logo" href="https://github.com/MauricioWRC" target="_blank" rel="external"><img id="logo" src="./img/logo.jpeg" alt="img"></a>
             <div class="opc">
-                <button>Sobre</button>
-                <button>Contato</button>
-                <button>Projetos</button>
+                <ul class="ul">
+                    <li class="link"><a href="#">Sobre</a></li>
+                    <li class="link"><a href="#">Contato </a></li>
+                    <li class="link"><a href="#">Projetos</a></li>
+                </ul>
             </div>
             <div class="opc2">
                 <input type="checkbox" id="checkbox-menu">
-                <label for="checkbox-menu">
+                <label for="checkbox-menu" id="btt">
                     <span class="hamb"></span>
                     <span class="hamb"></span>
                     <span class="hamb"></span>
                 </label>
+                
             </div>
         </header>
 
         <div class="corpo">
+            <div class="OpcPos">
+                <ul class="NovasOpc">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#tarefa1">Sobre</a></li>
+                    <li><a href="#tarefa2">Contato</a></li>
+                    <li><a href="#tarefa3">Tarefas</a></li>
+                </ul>
+            </div>
             <h1 id="titulo">Projetos</h1>
             <div class="all-cards">
-                <div class="card" >
-                    <div class="txt">
-                        <a class="Projetos" href="#">Projetos</a>
-                    </div>
-                    <div class="icon">
-                        <img class="ic" src="./img/html-5.png">
-                    </div>
+                <div class="card" id="tarefa1">
+                    <form action="" class="form" >
+                        <h1>Tarefas</h1>
+                        <img class="ic" src="./img/html-5.png" alt="">
+                    </form>
                 </div>
-                <div class="card">
-                    <div class="txt">
-                        <a class="Projetos" href="#">Projetos</a>
-                    </div>
-                    <div class="icon">
-                        <a href="#"><img class="ic" src="./img/css-3.png" alt=""></a>
-                    </div>
+                <div class="card" id="tarefa2">
+                    <form action="" class="form" >
+                        <h1>Tarefas</h1>
+                        <img class="ic" src="./img/css-3.png" alt="">
+                    </form>
                 </div>
-                <div class="card">
-                    <div class="txt">
-                        <a class="Projetos" href="https://mauriciowrc.github.io/Tarefas/" target="_blank">Tarefas</a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://mauriciowrc.github.io/Tarefas/" target="_blank"><img class="ic" src="./img/script-java.png" alt=""></a>
-                    </div>
+                <div class="card" id="tarefa3">
+                    <form action="" class="form" id="tarefa3">
+                        <h1>Tarefas</h1>
+                        <img class="ic" src="./img/script-java.png" alt="">
+                    </form>
                 </div>
             </div>
         </div>
@@ -63,7 +69,8 @@
             </div>
         </footer>
     </div>
-    <script src="./script/script.js"></script>
+    <script src="./script/loading.js"></script>
+    <script src="./script/cardMov.js"></script>
     <script>VanillaTilt.init(document.querySelectorAll(".card"),{
         max: 25,
         speed: 400,
